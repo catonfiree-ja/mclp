@@ -1,0 +1,200 @@
+[
+  {
+    "id": "item-01",
+    "name": "ACME BOATSWAIN PIPE™ 12",
+    "description": "Nickel-Plated Brass | Traditional Naval Bosun's Call (Model 12)",
+    "price": 2400,
+    "image": "/assets/images/generated/whistle_premium.png",
+    "category": "Police",
+    "isFeatured": true,
+    "nameTh": "นกหวีดทหารเรือ ACME BOATSWAIN PIPE™ 12",
+    "descriptionTh": "ทองเหลืองชุบนิกเกิล | นกหวีดเรียกสัญญาณทหารเรือแบบดั้งเดิม (รุ่น 12)"
+  },
+  {
+    "id": "item-02",
+    "name": "ACME METROPOLITAN POLICE WHISTLE™",
+    "description": "Nickel-Plated Brass | Classic Pea Whistle (Model 15)",
+    "price": 1000,
+    "image": "/assets/images/generated/whistle_premium.png",
+    "category": "Police",
+    "isFeatured": false,
+    "nameTh": "นกหวีดตำรวจ ACME METROPOLITAN POLICE WHISTLE™",
+    "descriptionTh": "ทองเหลืองชุบนิกเกิล | นกหวีดสุดคลาสสิกของเจ้าหน้าที่ (รุ่น 15)"
+  },
+  {
+    "id": "item-03",
+    "name": "Alcyon CHAIN HANDCUFF 5050-XB",
+    "description": "Black Finish | Standard Link (Model 5050-XB)",
+    "price": 2400,
+    "image": "/assets/images/generated/police_cuffs.png",
+    "category": "Police",
+    "isFeatured": true,
+    "nameTh": "กุญแจมือโซ่ Alcyon CHAIN HANDCUFF 5050-XB",
+    "descriptionTh": "ผิวเคลือบสีดำ | ข้อต่อโซ่มาตรฐาน (รุ่น 5050-XB)"
+  },
+  {
+    "id": "item-04",
+    "name": "Alcyon HINGED HANDCUFF 5005-X",
+    "description": "Nickel Finish | Double Lock (Model 5005-X)",
+    "price": 2800,
+    "image": "/assets/images/generated/police_cuffs.png",
+    "category": "Police",
+    "isFeatured": false,
+    "nameTh": "กุญแจมือบานพับ Alcyon HINGED HANDCUFF 5005-X",
+    "descriptionTh": "ผิวชุบนิกเกิล | ระบบล็อคสองชั้นดับเบิ้ลล็อค (รุ่น 5005-X)"
+  },
+  {
+    "id": "item-05",
+    "name": "Alcyon RIGID HANDCUFF 5050-RB",
+    "description": "Black Finish | Solid Frame (Model 5050-RB)",
+    "price": 4000,
+    "image": "/assets/images/generated/police_cuffs.png",
+    "category": "Police",
+    "isFeatured": false,
+    "nameTh": "กุญแจมือข้อแข็ง Alcyon RIGID HANDCUFF 5050-RB",
+    "descriptionTh": "ผิวเคลือบสีดำ | โครงสร้างแข็งแกร่งพิเศษ (รุ่น 5050-RB)"
+  },
+  {
+    "id": "item-06",
+    "name": "AltaContour-360 Knee Pads",
+    "description": "Black AltaLok Fastening System | Tactical Protective Gear",
+    "price": 2800,
+    "image": "/assets/images/generated/knee_pads_premium.png",
+    "category": "Outdoor",
+    "isFeatured": true,
+    "nameTh": "สนับเข่ายุทธวิธี AltaContour-360 Knee Pads",
+    "descriptionTh": "ระบบล็อค AltaLok สีดำ | อุปกรณ์ป้องกันข้อเข่ายุทธวิธี"
+  },
+  {
+    "id": "item-07",
+    "name": "American Optical ORIGINAL PILOT®",
+    "description": "Black Frame Gray SkyMaster™ Glass Lens",
+    "price": 8800,
+    "image": "/assets/images/generated/sunglasses_premium.png",
+    "category": "Outdoor",
+    "isFeatured": true,
+    "nameTh": "แว่นตานักบิน American Optical ORIGINAL PILOT®",
+    "descriptionTh": "กรอบดำ เลนส์กระจกเทา SkyMaster™ ของแท้"
+  },
+  {
+    "id": "item-08",
+    "name": "Tac Shield 12” Utility Straps",
+    "description": "Heavy-Duty Gear Straps | Assorted Colors",
+    "price": 300,
+    "image": "/assets/images/generated/outdoor_bag.png",
+    "category": "Outdoor",
+    "isFeatured": false,
+    "nameTh": "สายรัดอเนกประสงค์ Tac Shield 12” Utility Straps",
+    "descriptionTh": "สายรัดอุปกรณ์ทนทานสูง | มีหลายสีให้เลือก"
+  },
+  {
+    "id": "item-09",
+    "name": "Tac Shield 6” Light Sticks",
+    "description": "Emergency Safety & Tactical Chem Lights",
+    "price": 200,
+    "image": "/assets/images/generated/outdoor_stove.png",
+    "category": "Lights",
+    "isFeatured": false,
+    "nameTh": "แท่งเรืองแสงฉุกเฉิน Tac Shield 6” Light Sticks",
+    "descriptionTh": "แท่งไฟเคมีสำหรับเหตุฉุกเฉินและยุทธวิธี"
+  },
+  {
+    "id": "item-10",
+    "name": "Tac Shield Pistol Cleaning Kit",
+    "description": ".357 / .38 / 9mm Handgun Maintenance Kit",
+    "price": 1600,
+    "image": "/assets/images/generated/police_belt.png",
+    "category": "Outdoor",
+    "isFeatured": false,
+    "nameTh": "ชุดทำความสะอาดปืน Tac Shield Pistol Cleaning Kit",
+    "descriptionTh": "ชุดบำรุงรักษาปืนพกขนาด .357 / .38 / 9mm"
+  },
+  {
+    "id": "item-11",
+    "name": "Tac Shield 1.5” Gun Belt",
+    "description": "Heavy-Duty Tactical Nylon Belt | Black Duty",
+    "price": 4800,
+    "image": "/assets/images/generated/police_belt.png",
+    "category": "Outdoor",
+    "isFeatured": true,
+    "nameTh": "เข็มขัดยุทธวิธี Tac Shield 1.5” Gun Belt",
+    "descriptionTh": "เข็มขัดไนลอนยุทธวิธีทนทานสูง | สีดำ"
+  },
+  {
+    "id": "item-12",
+    "name": "Compact Elite Electronic Ear Muffs",
+    "description": "NRR Hearing Protection (Model T8005G)",
+    "price": 4000,
+    "image": "/assets/images/generated/outdoor_daypack.png",
+    "category": "Outdoor",
+    "isFeatured": false,
+    "nameTh": "หูฟังครอบหูตัดเสียง Compact Elite Electronic Ear Muffs",
+    "descriptionTh": "ปกป้องการได้ยินระดับ NRR (รุ่น T8005G)"
+  },
+  {
+    "id": "item-13",
+    "name": "Nextorch V35 X-CARRY Holster",
+    "description": "Compact Belt Holster for Flashlights",
+    "price": 1000,
+    "image": "/assets/images/generated/police_belt.png",
+    "category": "Lights",
+    "isFeatured": false,
+    "nameTh": "ซองไฟฉาย Nextorch V35 X-CARRY Holster",
+    "descriptionTh": "ซองพกไฟฉายติดเข็มขัดขนาดกะทัดรัด"
+  },
+  {
+    "id": "item-14",
+    "name": "Nextorch UT21 Emergency Light",
+    "description": "High-Visibility Warning Light",
+    "price": 1400,
+    "image": "/assets/images/generated/outdoor_stove.png",
+    "category": "Lights",
+    "isFeatured": true,
+    "nameTh": "ไฟฉุกเฉิน Nextorch UT21",
+    "descriptionTh": "ไฟสัญญาณเตือนการมองเห็นสูงชัดเจน"
+  },
+  {
+    "id": "item-15",
+    "name": "Nextorch UL360 Area Light",
+    "description": "360° Area Light | Camp & Work",
+    "price": 800,
+    "image": "/assets/images/generated/outdoor_stove.png",
+    "category": "Lights",
+    "isFeatured": false,
+    "nameTh": "ไฟแคมป์ปิ้ง Nextorch UL360 Area Light",
+    "descriptionTh": "ไฟส่องแสงกระจายตัวแนวกว้าง 360 องศา"
+  },
+  {
+    "id": "item-16",
+    "name": "Antonini SOS.SAR Rescue Knife",
+    "description": "Serrated Blade + Glass Breaker | Search & Rescue",
+    "price": 11000,
+    "image": "/assets/images/generated/folding_knife_premium.png",
+    "category": "Knives",
+    "isFeatured": true,
+    "nameTh": "มีดกู้ภัย Antonini SOS.SAR Rescue Knife",
+    "descriptionTh": "ใบมีดหยักพร้อมที่ทุบกระจก | เหมาะสำหรับงานค้นหา"
+  },
+  {
+    "id": "item-17",
+    "name": "Antonini OLD BEAR Pruning S",
+    "description": "Walnut Wood Handle | Curved Carbon Steel Blade",
+    "price": 1800,
+    "image": "/assets/images/generated/folding_knife_premium.png",
+    "category": "Knives",
+    "isFeatured": false,
+    "nameTh": "มีดช่าง Antonini OLD BEAR Pruning S",
+    "descriptionTh": "ด้ามไม้ Walnut | ใบมีดเหล็กคาร์บอนทรงโค้ง"
+  },
+  {
+    "id": "item-18",
+    "name": "Antonini OLD BEAR Folder",
+    "description": "Walnut Wood | Carbon Steel Blade | Locking Folder",
+    "price": 1400,
+    "image": "/assets/images/generated/folding_knife_premium.png",
+    "category": "Knives",
+    "isFeatured": true,
+    "nameTh": "มีดพับ Antonini OLD BEAR Folder",
+    "descriptionTh": "ด้ามไม้ Walnut | ใบมีดเหล็กคาร์บอนพร้อมตัวล็อค"
+  }
+]

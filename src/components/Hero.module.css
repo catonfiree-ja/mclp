@@ -1,0 +1,300 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    padding: 0 4rem;
+    overflow: hidden;
+    background-color: var(--bg-dark);
+}
+
+.bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 30% 50%, rgba(26, 26, 26, 0.4) 0%, rgba(26, 26, 26, 0.95) 80%);
+    z-index: 1;
+}
+
+.scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(0deg,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1) 1px,
+            transparent 1px,
+            transparent 2px);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--olive-light);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(4px);
+    border-left: 3px solid var(--olive-primary);
+}
+
+.mutedIcon {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.title {
+    font-size: 5.5rem;
+    line-height: 0.95;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+}
+
+.titleOffset {
+    display: block;
+    font-size: 2rem;
+    color: var(--olive-light);
+    margin-bottom: 0px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.description {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 500px;
+    margin-bottom: 3rem;
+    border-left: 2px solid var(--olive-primary);
+    padding-left: 1.5rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+    padding: 1.2rem 2.5rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.primaryBtn {
+    background-color: var(--olive-light);
+    color: var(--bg-dark);
+    /* High contrast pop */
+    border: 1px solid var(--olive-light);
+}
+
+.primaryBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: all 0.5s;
+}
+
+.primaryBtn:hover::before {
+    left: 100%;
+}
+
+.primaryBtn:hover {
+    background-color: transparent;
+    color: var(--olive-light);
+    border-color: var(--olive-light);
+}
+
+.secondaryBtn {
+    background-color: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(5px);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secondaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Glassmorphic Spec Card */
+.glassCard {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: 320px;
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 2px solid var(--olive-primary);
+    z-index: 4;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.glassHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--olive-light);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glassGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fullWidth {
+    grid-column: span 2;
+}
+
+.statLabel {
+    font-family: monospace;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 0.25rem;
+    letter-spacing: 1px;
+}
+
+.statValue {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.brandsList {
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.brandsList span {
+    color: var(--olive-light);
+}
+
+.glassFooter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: monospace;
+    font-size: 0.65rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* HUD Enhancements */
+.hudTopLeft {
+    position: absolute;
+    top: 90px;
+    left: 2rem;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 2px;
+    z-index: 10;
+}
+
+.hudBottomRight {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 2px;
+    z-index: 10;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 4rem;
+    }
+
+    .glassCard {
+        right: 2rem;
+        width: 280px;
+    }
+}
+
+@media (max-width: 900px) {
+    .glassCard {
+        display: none;
+    }
+
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .titleOffset {
+        font-size: 1.5rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 0 2rem;
+    }
+}
