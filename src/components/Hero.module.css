@@ -305,7 +305,9 @@
     }
 
     .title {
-        font-size: 3.5rem;
+        font-size: 3rem;
+        line-height: 1.1;
+        /* slightly looser for Thai */
     }
 
     .titleOffset {
@@ -313,13 +315,14 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .hero {
         padding: calc(var(--nav-height, 80px) + 2rem) 1.5rem 2rem;
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
+        line-height: 1.2;
         /* Drastic scale down for narrow phones */
     }
 
