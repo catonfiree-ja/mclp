@@ -196,19 +196,37 @@
     .container {
         gap: 2rem;
         padding-bottom: 2rem;
+        text-align: center;
+        align-items: center;
     }
 
     .logo {
         font-size: 1.5rem;
+        justify-content: center;
     }
 
     .aboutText {
         font-size: 0.85rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .socials {
+        justify-content: center;
     }
 
     .columnTitle {
         font-size: 0.9rem;
         margin-bottom: 1.5rem;
+        justify-content: center;
+    }
+
+    .linkList {
+        align-items: center;
+    }
+
+    .contactList li {
+        justify-content: center;
     }
 
     .copyright {

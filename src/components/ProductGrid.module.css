@@ -304,18 +304,49 @@
         font-size: 2rem;
     }
 
-    /* Force single column on tiny screens if 280px is too tight */
+    /* Force two columns on mobile so cards aren't massive skyscrapers */
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .content {
-        padding: 1.5rem;
+        padding: 1rem;
+        /* Tighter padding for 2-column small cards */
     }
 
     .addBtn {
-        padding: 0.8rem 1.2rem;
-        /* Much larger touch target */
-        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.75rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .name {
+        font-size: 0.95rem;
+        /* Scale down title size */
+        margin-bottom: 0.5rem;
+    }
+
+    .desc {
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        /* Truncate description to 2 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .featuredBadge {
+        padding: 0.2rem 1.5rem;
+        font-size: 0.55rem;
+        top: 1rem;
+        left: -1.5rem;
     }
 }

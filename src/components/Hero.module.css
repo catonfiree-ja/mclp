@@ -278,6 +278,13 @@
 }
 
 @media (max-width: 900px) {
+
+    .hudTopLeft,
+    .hudBottomRight {
+        display: none;
+        /* Hide decorative text on mobile to prevent overlapping */
+    }
+
     .hero {
         flex-direction: column;
         justify-content: center;
