@@ -251,10 +251,71 @@
     .header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .shopSection {
+        padding: 4rem 2rem;
+    }
+
+    /* Convert filters to a horizontal swipeable bar */
+    .filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100vw;
+        margin-left: -2rem;
+        /* Pull out of padding */
+        padding: 0 2rem 1rem 2rem;
+        -webkit-overflow-scrolling: touch;
+        /* Smooth iOS scrolling */
+        scrollbar-width: none;
+        /* Hide scrollbar Firefox */
+    }
+
+    .filters::-webkit-scrollbar {
+        display: none;
+        /* Hide scrollbar Chrome/Safari */
+    }
+
+    .filterBtn {
+        font-size: 0.9rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .shopSection {
+        padding: 3rem 1.5rem;
     }
 
     .filters {
-        flex-wrap: wrap;
+        margin-left: -1.5rem;
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+
+    .sectionTitle h2 {
+        font-size: 2rem;
+    }
+
+    /* Force single column on tiny screens if 280px is too tight */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .addBtn {
+        padding: 0.8rem 1.2rem;
+        /* Much larger touch target */
+        font-size: 0.85rem;
     }
 }

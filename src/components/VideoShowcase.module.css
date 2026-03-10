@@ -103,6 +103,7 @@
 @media (max-width: 768px) {
     .showcase {
         height: 60vh;
+        min-height: 400px;
     }
 
     .overlay {
@@ -112,5 +113,23 @@
     .alignRight {
         align-items: flex-start;
         text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase {
+        height: 50vh;
+        min-height: 350px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .actionBtn {
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+        text-align: center;
     }
 }

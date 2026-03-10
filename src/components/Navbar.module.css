@@ -128,7 +128,12 @@
 
 @media (max-width: 900px) {
     .mobileToggle {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        padding: 0;
     }
 
     .hideMobile {
@@ -139,16 +144,43 @@
         position: fixed;
         top: var(--nav-height);
         left: -100%;
-        width: 250px;
+        width: 100vw;
+        /* Take full width on small screens */
         height: calc(100vh - var(--nav-height));
         background-color: var(--bg-dark);
         flex-direction: column;
-        padding: 2rem;
-        transition: left 0.3s ease;
-        border-right: 1px solid var(--border-subtle);
+        align-items: center;
+        padding: 2rem 0;
+        transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-right: none;
+    }
+
+    .navLink {
+        font-size: 1.2rem;
+        /* Larger font for mobile tap */
+        padding: 1rem 2rem;
+        width: 100%;
+        text-align: center;
     }
 
     .navLinks.mobileOpen {
         left: 0;
+    }
+
+    .actionBtn {
+        min-width: 44px;
+        /* Essential for native touch feeling */
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navContainer {
+        padding: 0 1rem;
+    }
+
+    .logoImg {
+        height: 50px;
+        /* Scale logo down slightly for narrow phones */
     }
 }

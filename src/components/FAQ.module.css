@@ -102,3 +102,27 @@
         font-size: 2rem;
     }
 }
+
+@media (max-width: 480px) {
+    .faqSection {
+        padding: 3rem 1.5rem;
+    }
+
+    .faqQuestion {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .faqQuestion h3 {
+        font-size: 1rem;
+    }
+
+    .faqAnswer {
+        padding: 0 1.5rem;
+    }
+
+    .aeoParagraph {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+    }
+}

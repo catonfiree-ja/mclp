@@ -278,8 +278,29 @@
 }
 
 @media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0 2rem;
+        min-height: 100vh;
+    }
+
+    .heroContent {
+        margin-top: 0;
+        z-index: 5;
+    }
+
     .glassCard {
-        display: none;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 3rem;
+        width: 100%;
+        max-width: 400px;
+        z-index: 5;
+        /* Re-enable display but remove 3d transform on mobile for performance */
+        display: block;
     }
 
     .title {
@@ -289,12 +310,54 @@
     .titleOffset {
         font-size: 1.5rem;
     }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 1.5rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        /* Drastic scale down for narrow phones */
+    }
+
+    .titleOffset {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+    }
 
     .actions {
         flex-direction: column;
+        width: 100%;
+        gap: 1rem;
     }
 
-    .hero {
-        padding: 0 2rem;
+    .primaryBtn,
+    .secondaryBtn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .glassCard {
+        padding: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .glassGrid {
+        grid-template-columns: 1fr;
+        /* Stack vertically on very small screens */
+        gap: 1rem;
+    }
+
+    .fullWidth {
+        grid-column: span 1;
     }
 }
