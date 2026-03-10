@@ -282,13 +282,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 0 2rem;
+        padding: calc(var(--nav-height, 80px) + 2rem) 2rem 2rem;
         min-height: 100vh;
     }
 
     .heroContent {
         margin-top: 0;
         z-index: 5;
+        width: 100%;
     }
 
     .glassCard {
@@ -314,7 +315,7 @@
 
 @media (max-width: 480px) {
     .hero {
-        padding: 0 1.5rem;
+        padding: calc(var(--nav-height, 80px) + 2rem) 1.5rem 2rem;
     }
 
     .title {
