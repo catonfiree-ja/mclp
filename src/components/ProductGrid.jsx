@@ -1,7 +1,8 @@
 import styles from './ProductGrid.module.css';
 import productsData from '../data/products.json';
-import { ShoppingCart, Eye } from 'lucide-react';
+
 import { useState } from 'react';
+// eslint-disable-next-line no-unused-vars
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
@@ -79,7 +80,7 @@ const ProductGrid = () => {
     const filteredProducts = productsData.filter(product => {
         if (activeFilter === 'ALL') return true;
         if (activeFilter === 'KNIVES' && product.category === 'Knives') return true;
-        if (activeFilter === 'LIGHTS' && product.category === 'Light') return true;
+        if (activeFilter === 'LIGHTS' && product.category === 'Lights') return true;
         if (activeFilter === 'ANTI-RIOT' && product.category === 'Anti-Riot Gear') return true;
         if (activeFilter === 'POLICE' && product.category === 'Police') return true;
         if (activeFilter === 'OUTDOOR' && product.category === 'Outdoor') return true;

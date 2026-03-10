@@ -1,5 +1,6 @@
 import styles from './Hero.module.css';
-import { Target, Activity, ShieldCheck, Crosshair } from 'lucide-react';
+import { Target, ShieldCheck } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 

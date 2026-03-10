@@ -1,7 +1,7 @@
 .hero {
     position: relative;
-    height: 100vh;
-    min-height: 800px;
+    height: 100svh;
+    min-height: 600px;
     display: flex;
     align-items: center;
     padding: 0 4rem;
@@ -100,6 +100,7 @@
     padding-left: 1.5rem;
     font-weight: 300;
     line-height: 1.8;
+    word-break: keep-all;
 }
 
 .actions {
@@ -290,7 +291,8 @@
         justify-content: center;
         align-items: flex-start;
         padding: calc(var(--nav-height, 80px) + 2rem) 2rem 2rem;
-        min-height: 100vh;
+        min-height: 100svh;
+        height: auto;
     }
 
     .heroContent {
@@ -328,8 +330,8 @@
     }
 
     .title {
-        font-size: 2.25rem;
-        line-height: 1.2;
+        font-size: 2.5rem;
+        line-height: 1.1;
         /* Drastic scale down for narrow phones */
     }
 
